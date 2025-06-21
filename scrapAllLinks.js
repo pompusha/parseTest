@@ -9,12 +9,12 @@ const data = [];
 
 (async () => {
   const byBrend = await getTyresByBrandLinks();
-
-  // for (let i = 0; i < byBrend.length; i++) {
-  // To get a short sample of the website data, change the for loop condition,
-  // otherwise it will parse all tires by brand.
-  // For example:
-  for (let i = 0; i < 3; i++) {
+  //
+  for (let i = 0; i < byBrend.length; i++) {
+    // To get a short sample of the website data, change the for loop condition,
+    // otherwise it will parse all tires by brand.
+    // For example:
+    // for (let i = 0; i < 3; i++) {
     await getAllUrlPages(byBrend[i]["href"]);
   }
 
